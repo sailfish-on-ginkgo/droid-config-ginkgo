@@ -1,0 +1,31 @@
+[Unit]
+Description=ohm daemon for resource policy management
+DefaultDependencies=no
+Requires=dbus.socket
+After=dbus.socket local-fs.target systemd-udev-settle.service
+Conflicts=shutdown.target
+
+[Service]
+Type=dbus
+BusName=org.freedesktop.ohm
+Environment=OHMD_FLAGS=--mlock=none
+EnvironmentFile=-/etc/sysconfig/ohmd.debug
+EnvironmentFile=-/etc/sysconfig/ohmd
+ExecStart=/usr/sbin/ohmd --no-daemon $OHMD_FLAGS $DEBUG_FLAGS
+ExecReload=/bin/kill -HUP $MAINPID
+Restart=always
+RestartSec=1
+# We need access to /run/user/X/dbus to connect to user session bus, hence
+# we cannot use ProtectHome but we'll deny access to /root and /home separately
+ProtectSystem=full
+InaccessibleDirectories=/root /home
+ReadWriteDirectories=/var/lib/ohm /run/user
+#ReadOnlyDirectories=/
+ReadOnlyPaths=/
+# CAP_NET_RAW to open session DBus socket.
+# CAP_DAC_READ_SEARCH to open session DBus socket (traverse to /run/user/*/dbus).
+CapabilityBoundingSet=CAP_NET_RAW CAP_DAC_READ_SEARCH
+
+[Install]
+WantedBy=basic.target
+Alias=dbus-org.freedesktop.ohm.service

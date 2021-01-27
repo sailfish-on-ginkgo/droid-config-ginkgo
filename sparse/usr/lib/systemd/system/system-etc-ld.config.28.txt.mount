@@ -1,0 +1,13 @@
+[Unit]
+Description=Droid mount for /system/etc/ld.config.28.txt
+Before=local-fs.target
+
+[Mount]
+What=/usr/libexec/droid-hybris/system/etc/ld.config.28.txt
+Where=/system/etc/ld.config.28.txt
+Type=none
+Options=ro,bind
+TimeoutSec=5
+
+[Install]
+WantedBy=local-fs.target

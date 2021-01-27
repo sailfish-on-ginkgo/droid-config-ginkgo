@@ -1,0 +1,7 @@
+CPUCHECK_STRING="Qualcomm Technologies, Inc SDMMAGPIE"
+
+PART_1="boot"
+
+PART_REAL_1="sde48"
+
+PART_I="1" 
