@@ -31,11 +31,6 @@ Requires: busybox-static
 Requires: openssh-server
 Requires: zypper
 
-# NFC
-Requires: jolla-settings-system-nfc
-Requires: nfcd-binder-plugin
-Requires: nfcd-mce-plugin
-
 Requires: sailfish-content-graphics-z%{icon_res}
 
 Requires: jolla-settings-networking-multisim

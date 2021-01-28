@@ -1,7 +1,7 @@
-CPUCHECK_STRING="Qualcomm Technologies, Inc SDMMAGPIE"
+CPUCHECK_STRING="Qualcomm Technologies, Inc. SM6150 Interposer TRINKET"
 
 PART_1="boot"
 
-PART_REAL_1="sde48"
+PART_REAL_1="mmcblk0p72"
 
 PART_I="1" 
