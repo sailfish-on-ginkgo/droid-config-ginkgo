@@ -3,6 +3,13 @@ Summary: Jolla HW Adaptation ginkgo
 Requires: droid-hal-ginkgo
 Requires: droid-hal-ginkgo-img-boot
 Requires: droid-hal-ginkgo-kernel-modules
+Requires: droid-config-ginkgo-sailfish
+Requires: droid-config-ginkgo-pulseaudio-settings
+Requires: droid-config-ginkgo-policy-settings
+Requires: droid-config-ginkgo-preinit-plugin
+Requires: droid-config-ginkgo-flashing
+Requires: droid-config-ginkgo-bluez5
+Requires: droid-hal-version-ginkgo
 Requires: droid-hal-ginkgo-detritus
 
 # Hybris packages
@@ -63,6 +70,12 @@ Requires: geoclue-provider-hybris
 # For FM radio on some QCOM devices
 Requires: qt5-qtmultimedia-plugin-mediaservice-irisradio
 Requires: jolla-mediaplayer-radio
+
+# For torch
+Requires: jolla-settings-system-flashlight
+
+# Additional packages
+Requires: sd-utils
 
 # For suspend to work with enabled Wi-Fi on newer Qualcomm devices
 Requires: sailfish-connman-plugin-suspend
