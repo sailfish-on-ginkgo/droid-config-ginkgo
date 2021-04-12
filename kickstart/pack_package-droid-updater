@@ -38,7 +38,7 @@ mv $GEN_IMG_BASE.tar.bz2 updater/$DST_IMG
 cp -r ../hybris/hybris-installer/hybris-installer/* updater/
 
 # Update install script with image details
-LOS_VER="16.0"
+LOS_VER="17.1"
 sed -e "s/%DEVICE%/$DEVICE/g" -e "s/%VERSION%/$VERSION/g" -e "s/%VERSION_ID%/$VERSION_ID/g" -e "s/%DATE%/$DATE/g" -e "s/%IMAGE_SIZE%/${IMAGE_SIZE}M/g" -e "s/%DST_PKG%/$DST_PKG/g" -e "s/%LOS_VER%/$LOS_VER/g" -i updater/META-INF/com/google/android/update-binary
 
 # Pack updater .zip
