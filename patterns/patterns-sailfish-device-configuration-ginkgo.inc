@@ -3,6 +3,14 @@ Summary: Jolla Configuration ginkgo
 Requires: patterns-sailfish-device-configuration-common-ginkgo
 Requires: patterns-sailfish-device-adaptation-ginkgo
 
+Requires: droid-config-ginkgo-sailfish
+Requires: droid-config-ginkgo-pulseaudio-settings
+Requires: droid-config-ginkgo-policy-settings
+Requires: droid-config-ginkgo-preinit-plugin
+Requires: droid-config-ginkgo-flashing
+Requires: droid-config-ginkgo-bluez5
+Requires: droid-hal-version-ginkgo
+
 # For devices with cellular modem. Those without one, please comment out:
 Requires: patterns-sailfish-cellular-apps
 

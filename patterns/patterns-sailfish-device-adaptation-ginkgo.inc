@@ -3,14 +3,8 @@ Summary: Jolla HW Adaptation ginkgo
 Requires: droid-hal-ginkgo
 Requires: droid-hal-ginkgo-img-boot
 Requires: droid-hal-ginkgo-kernel-modules
-Requires: droid-config-ginkgo-sailfish
-Requires: droid-config-ginkgo-pulseaudio-settings
-Requires: droid-config-ginkgo-policy-settings
-Requires: droid-config-ginkgo-preinit-plugin
-Requires: droid-config-ginkgo-flashing
-Requires: droid-config-ginkgo-bluez5
-Requires: droid-hal-version-ginkgo
-Requires: droid-hal-ginkgo-detritus
+Requires: droid-hal-ginkgo-kernel-dtbo
+Requires: droid-hal-ginkgo-tools
 
 # Hybris packages
 Requires: libhybris-libEGL
