@@ -31,6 +31,7 @@ Requires: libhybris-tests
 Requires: busybox-static
 Requires: openssh-server
 Requires: zypper
+Requires: gnu-bash
 Requires: sailfish-content-graphics-z%{icon_res}
 
 # For multi-SIM devices

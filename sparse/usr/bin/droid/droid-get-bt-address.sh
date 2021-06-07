@@ -10,5 +10,5 @@ if [ ! -f "$addressfile" ]; then
     echo "File not found, generating new address"
     mkdir -p "$addresspath"
     chmod 0755 "$addresspath"
-    echo 00$mac > "$addressfile"
+    echo "00$mac" > "$addressfile"
 fi
