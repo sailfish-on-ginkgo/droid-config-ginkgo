@@ -75,6 +75,7 @@ Requires: sd-utils
 Requires: sailfish-connman-plugin-suspend
 
 Requires: ohm-plugin-accessories >= 1.7.0
+Requires: libgbinder-tools
 
 %description -n patterns-sailfish-device-adaptation-ginkgo
 Pattern with packages for ginkgo HW Adaptation
