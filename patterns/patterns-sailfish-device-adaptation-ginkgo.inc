@@ -74,6 +74,8 @@ Requires: sd-utils
 # For suspend to work with enabled Wi-Fi on newer Qualcomm devices
 Requires: sailfish-connman-plugin-suspend
 
+Requires: ohm-plugin-accessories >= 1.7.0
+
 %description -n patterns-sailfish-device-adaptation-ginkgo
 Pattern with packages for ginkgo HW Adaptation
 
