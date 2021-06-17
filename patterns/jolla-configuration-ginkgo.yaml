@@ -1,6 +1,0 @@
-Description: Pattern with packages for ginkgo configurations
-Name: jolla-configuration-ginkgo
-Requires:
-- patterns-sailfish-device-configuration-ginkgo
-
-Summary: Jolla Configuration ginkgo
