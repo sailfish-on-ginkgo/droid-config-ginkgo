@@ -15,23 +15,12 @@ Requires: droid-hal-version-ginkgo
 Requires: patterns-sailfish-cellular-apps
 
 # Early stages of porting benefit from these:
-Requires: patterns-sailfish-rnd
+Requires: patterns-sailfish-device-tools
 
-# dev-tools pattern will be fixed in the next release
-# for now we'll use its 'exploded' version:
-Recommends: jolla-developer-mode
-Requires: strace
-Requires: gdb
-Requires: gdb-gdbserver
-Requires: vim-enhanced
-Requires: less
-Requires: valgrind
-Requires: lipstick-qt5-tools
-Requires: libhybris-tests
-Requires: busybox-static
-Requires: openssh-server
-Requires: zypper
-Requires: gnu-bash
+# jolla-rnd-device will enable usb-moded even when UI is not yet
+# brought up (useful during development, available since update10)
+Requires: jolla-rnd-device
+
 Requires: sailfish-content-graphics-z%{icon_res}
 
 # For multi-SIM devices
