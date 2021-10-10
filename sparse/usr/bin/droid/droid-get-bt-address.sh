@@ -1,14 +1,9 @@
-#!/bin/bash
-echo "droid-get-bt-address: Setting up bluetooth address"
+#!/bin/sh
 
-hexchars="0123456789ABCDEF"
-addresspath="/var/lib/bluetooth/"
-addressfile="$addresspath/board-address"
-mac=$( for i in {1..10} ; do echo -n ${hexchars:$(( $RANDOM % 16 )):1} ; done | sed -e 's/\(..\)/:\1/g' )
+B=$(xxd -e -g 8 /data/vendor/mac_addr/bt.mac | grep -oiE "([a-f0-9]{12})")
+echo "BT MAC: $B"        
 
-if [ ! -f "$addressfile" ]; then
-    echo "File not found, generating new address"
-    mkdir -p "$addresspath"
-    chmod 0755 "$addresspath"
-    echo "00$mac" > "$addressfile"
-fi
+if [ ! -z "$B" ] ; then        
+    bt_mac=${B:0:2}:${B:2:2}:${B:4:2}:${B:6:2}:${B:8:2}:${B:10:2}
+    echo $bt_mac > /var/lib/bluetooth/board-address        
+fi 
