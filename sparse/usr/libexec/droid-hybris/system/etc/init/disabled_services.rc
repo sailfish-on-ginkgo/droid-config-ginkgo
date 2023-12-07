@@ -85,3 +85,8 @@ service qvrd qvrd_HYBRIS_DISABLED
 service vendor.dataqti /system/vendor/bin/qti_HYBRIS_DISABLED
     disabled
     override
+
+#tmp disable
+service vendor.sensors /vendor/bin/sscrpcd_HYBRIS_DISABLED
+    disabled
+    override
