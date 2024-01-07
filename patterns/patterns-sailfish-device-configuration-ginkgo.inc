@@ -54,6 +54,25 @@ Requires: jolla-mediaplayer
 Requires: jolla-calendar
 Requires: sailfish-weather
 
+#Debug tools
+Recommends: vim
+Recommends: strace
+Recommends: unzip
+Recommends: git
+Recommends: mce-tools
+
+#Sailfish porter tools
+Recommends: jolla-developer-mode
+Recommends: sailfishsilica-qt5-demos
+Recommends: busybox-static
+Recommends: net-tools
+Recommends: openssh-clients
+Recommends: openssh-server
+Recommends: vim-enhanced
+Recommends: zypper
+Recommends: strace
+Recommends: jolla-rnd-device
+
 %description -n patterns-sailfish-device-configuration-ginkgo
 Pattern with packages for xqau51 configurations
 
