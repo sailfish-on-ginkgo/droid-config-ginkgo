@@ -73,6 +73,10 @@ Recommends: zypper
 Recommends: strace
 Recommends: jolla-rnd-device
 
+# remove useless busybox-bash
+Requires: gnu-bash
+Obsoletes: busybox-symlinks-bash
+
 %description -n patterns-sailfish-device-configuration-ginkgo
 Pattern with packages for xqau51 configurations
 
