@@ -56,7 +56,7 @@ Requires: usb-moded
 Requires: rfkill
 
 # enable device lock and allow to select untrusted software
-Requires: jolla-devicelock-daemon-encsfa
+#Requires: jolla-devicelock-daemon-encsfa
 
 # For GPS
 Requires: geoclue-provider-hybris
@@ -79,6 +79,11 @@ Requires: libgbinder-tools
 
 # For debug sound cards
 Requires: alsa-utils
+
+#Add FP support
+Requires: sailfish-fpd-community
+Requires: sailfish-devicelock-fpd
+Requires: droid-fake-crypt
 
 %description -n patterns-sailfish-device-adaptation-ginkgo
 Pattern with packages for ginkgo HW Adaptation
