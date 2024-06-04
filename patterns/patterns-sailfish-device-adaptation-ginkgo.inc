@@ -84,6 +84,9 @@ Requires: alsa-utils
 Requires: sailfish-fpd-community
 Requires: sailfish-devicelock-fpd
 Requires: droid-fake-crypt
+Requires: droid-biometry-fp
+
+Requires: yamuisplash
 
 %description -n patterns-sailfish-device-adaptation-ginkgo
 Pattern with packages for ginkgo HW Adaptation
