@@ -12,7 +12,7 @@ Requires: droid-config-ginkgo-bluez5
 Requires: droid-hal-version-ginkgo
 
 # For devices with cellular modem. Those without one, please comment out:
-# Requires: patterns-sailfish-cellular-apps
+Requires: patterns-sailfish-cellular-apps
 
 # Early stages of porting benefit from these:
 # Requires: patterns-sailfish-device-tools
