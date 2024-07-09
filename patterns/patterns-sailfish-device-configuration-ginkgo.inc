@@ -54,6 +54,9 @@ Requires: jolla-mediaplayer
 Requires: jolla-calendar
 Requires: sailfish-weather
 
+# Why Phone app not installed automatically?
+Requires: voicecall-ui-jolla
+
 #Debug tools
 Recommends: vim
 Recommends: strace
