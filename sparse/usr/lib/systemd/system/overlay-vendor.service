@@ -1,5 +1,6 @@
 [Unit]
 Description=Overlay /usr/libexec/droid-hal/vendor over /vendor
+Before=local-fs.target
 After=vendor.mount
 DefaultDependencies=no
 
