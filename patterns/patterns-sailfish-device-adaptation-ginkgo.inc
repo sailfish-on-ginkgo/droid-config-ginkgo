@@ -81,10 +81,10 @@ Requires: libgbinder-tools
 Requires: alsa-utils
 
 #Add FP support
-Requires: sailfish-fpd-community
+#Requires: sailfish-fpd-community
 Requires: sailfish-devicelock-fpd
-Requires: droid-fake-crypt
-Requires: droid-biometry-fp
+#Requires: droid-fake-crypt
+#Requires: droid-biometry-fp
 
 Requires: yamuisplash
 
