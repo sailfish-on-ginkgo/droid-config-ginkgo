@@ -81,6 +81,6 @@ Requires: gnu-bash
 Obsoletes: busybox-symlinks-bash
 
 %description -n patterns-sailfish-device-configuration-ginkgo
-Pattern with packages for xqau51 configurations
+Pattern with packages for ginkgo configurations
 
 %files -n patterns-sailfish-device-configuration-ginkgo
