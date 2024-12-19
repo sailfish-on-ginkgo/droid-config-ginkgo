@@ -86,6 +86,8 @@ Requires: sailfish-devicelock-fpd
 Requires: droid-fake-crypt
 Requires: droid-biometry-fp
 
+Recommends: libhybris-tests
+
 %description -n patterns-sailfish-device-adaptation-ginkgo
 Pattern with packages for ginkgo HW Adaptation
 
