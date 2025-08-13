@@ -85,8 +85,9 @@ service qvrd qvrd_HYBRIS_DISABLED
 service vendor.dataqti /system/vendor/bin/qti_HYBRIS_DISABLED
     disabled
     override
-
-#tmp disable
 service vendor.sensors /vendor/bin/sscrpcd_HYBRIS_DISABLED
+    disabled
+    override
+service vendor.camera-provider-2-4 /vendor/bin/hw/android.hardware.camera.provider@2.4-service_HYBRIS_DISABLED
     disabled
     override
