@@ -33,5 +33,4 @@ Obsoletes: gecko-camera-droid-plugin
 
 %include droid-configs-device/droid-configs.inc
 %include patterns/patterns-sailfish-device-adaptation-ginkgo.inc
-%include patterns/patterns-sailfish-device-configuration-ginkgo.inc
 %include patterns/patterns-sailfish-device-configuration-willow.inc

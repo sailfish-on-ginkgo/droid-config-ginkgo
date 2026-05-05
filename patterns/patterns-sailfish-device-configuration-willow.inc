@@ -1,7 +1,7 @@
 %package -n patterns-sailfish-device-configuration-willow
 Summary: Jolla Configuration willow
-Requires: patterns-sailfish-device-configuration-common-willow
-Requires: patterns-sailfish-device-adaptation-willow
+Requires: patterns-sailfish-device-configuration-common-ginkgo
+Requires: patterns-sailfish-device-adaptation-ginkgo
 
 Requires: droid-config-willow-sailfish
 Requires: droid-config-willow-pulseaudio-settings
@@ -9,7 +9,7 @@ Requires: droid-config-willow-policy-settings
 Requires: droid-config-willow-preinit-plugin
 Requires: droid-config-willow-flashing
 Requires: droid-config-willow-bluez5
-Requires: droid-hal-version-willow
+Requires: droid-hal-version-ginkgo
 
 # For devices with cellular modem. Those without one, please comment out:
 Requires: patterns-sailfish-cellular-apps
