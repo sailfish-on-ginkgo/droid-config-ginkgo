@@ -17,7 +17,7 @@ if [ ! -e "$GEN_IMG_BASE.tar.bz2" ]; then
 fi
 
 # Make sure we have 'bc' to estimate rootfs size
-zypper --non-interactive in bc &> /dev/null
+command -v bc > /dev/null || zypper --non-interactive in bc &> /dev/null
 
 # Roughly estimate the final rootfs size when installed
 IMAGE_SIZE=`echo "scale=2; 2.25 * $(du -h $GEN_IMG_BASE.tar.bz2 | cut -d'M' -f1)" | bc`
