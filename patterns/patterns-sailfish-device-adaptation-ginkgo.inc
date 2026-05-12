@@ -68,9 +68,6 @@ Requires: jolla-mediaplayer-radio
 # For torch
 Requires: jolla-settings-system-flashlight
 
-# Additional packages
-Requires: sd-utils
-
 # For suspend to work with enabled Wi-Fi on newer Qualcomm devices
 Requires: sailfish-connman-plugin-suspend
 
