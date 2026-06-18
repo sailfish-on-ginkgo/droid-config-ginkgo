@@ -3,13 +3,6 @@ Summary: Jolla Configuration ginkgo
 Requires: patterns-sailfish-device-configuration-common-ginkgo
 Requires: patterns-sailfish-device-adaptation-ginkgo
 
-Requires: droid-config-ginkgo-sailfish
-Requires: droid-config-ginkgo-pulseaudio-settings
-Requires: droid-config-ginkgo-policy-settings
-Requires: droid-config-ginkgo-preinit-plugin
-Requires: droid-config-ginkgo-flashing
-Requires: droid-config-ginkgo-bluez5
-Requires: droid-hal-version-ginkgo
 
 # For devices with cellular modem. Those without one, please comment out:
 Requires: patterns-sailfish-cellular-apps
@@ -19,7 +12,7 @@ Requires: patterns-sailfish-cellular-apps
 
 # jolla-rnd-device will enable usb-moded even when UI is not yet
 # brought up (useful during development, available since update10)
-Requires: jolla-rnd-device
+# Requires: jolla-rnd-device
 
 Requires: sailfish-content-graphics-z%{icon_res}
 
@@ -44,16 +37,6 @@ Requires: patterns-sailfish-consumer-generic
 # to improve camera startup times and the like
 Requires: mapplauncherd-booster-silica-qt5-media
 
-# some apps useful
-Requires: sailfish-office
-Requires: jolla-calculator
-Requires: jolla-email
-Requires: jolla-notes
-Requires: jolla-clock
-Requires: jolla-mediaplayer
-Requires: jolla-calendar
-Requires: sailfish-weather
-
 # Why Phone app not installed automatically?
 Requires: voicecall-ui-jolla
 
@@ -63,18 +46,7 @@ Recommends: strace
 Recommends: unzip
 Recommends: git
 Recommends: mce-tools
-
-#Sailfish porter tools
-Recommends: jolla-developer-mode
-Recommends: sailfishsilica-qt5-demos
-Recommends: busybox-static
-Recommends: net-tools
-Recommends: openssh-clients
-Recommends: openssh-server
-Recommends: vim-enhanced
 Recommends: zypper
-Recommends: strace
-Recommends: jolla-rnd-device
 
 # remove useless busybox-bash
 Requires: gnu-bash

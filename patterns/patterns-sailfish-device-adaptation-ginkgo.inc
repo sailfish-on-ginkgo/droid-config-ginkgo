@@ -6,6 +6,15 @@ Requires: droid-hal-ginkgo-kernel-modules
 Requires: droid-hal-ginkgo-kernel-dtbo
 Requires: droid-hal-ginkgo-tools
 
+
+Requires: droid-config-ginkgo-sailfish
+Requires: droid-config-ginkgo-pulseaudio-settings
+Requires: droid-config-ginkgo-policy-settings
+Requires: droid-config-ginkgo-preinit-plugin
+Requires: droid-config-ginkgo-flashing
+Requires: droid-config-ginkgo-bluez5
+Requires: droid-hal-version-ginkgo
+
 # Hybris packages
 Requires: libhybris-libEGL
 Requires: libhybris-libGLESv2
@@ -30,6 +39,10 @@ Requires: qt5-plugin-generic-evdev
 
 Requires: pulseaudio-modules-droid
 Requires: pulseaudio-modules-droid-hidl
+
+# For camera dummy audioflinger is needed
+Requires: audiosystem-passthrough-dummy-af
+
 # for audio recording to work:
 Requires: qt5-qtmultimedia-plugin-mediaservice-gstmediacapture
 
@@ -42,8 +55,6 @@ Requires: qtscenegraph-adaptation
 Requires: gstreamer1.0-droid
 Requires: gmp-droid
 
-# For camera dummy audioflinger is needed
-Requires: audiosystem-passthrough-dummy-af
 
 # This is needed for notification LEDs
 Requires: mce-plugin-libhybris
