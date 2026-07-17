@@ -1,0 +1,2 @@
+ACTION=="add", SUBSYSTEM=="spi", ATTR{driver}=="fts_ts", RUN+="/bin/sh -c 'ln -sf /sys$env{DEVPATH}/double_tap_wake /run/touchscreen_double_tap_wake'"
+ACTION=="add", SUBSYSTEM=="spi", ATTR{driver}=="NVT-ts", RUN+="/bin/sh -c 'ln -sf /sys$env{DEVPATH}/double_tap_wake /run/touchscreen_double_tap_wake'"
